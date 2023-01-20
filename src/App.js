@@ -1,9 +1,8 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Calculator from './components/Calculator';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Quote from './components/Quote';
+import Books from './pages/Books';
+import Categories from './pages/Categories';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,9 +15,8 @@ class App extends React.Component {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/calculator" element={<Calculator />} />
-          <Route path="/quotes" element={<Quote />} />
+          <Route path="/" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
         </Routes>
       </Router>
     );
