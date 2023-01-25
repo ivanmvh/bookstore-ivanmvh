@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import BookCard from './BookCard';
-import Form from './Form';
+import AddForm from './AddForm';
 import { addBook, removeBook } from '../redux/books/books';
 
 const BookList = () => {
@@ -28,7 +28,7 @@ const BookList = () => {
           />
         ))}
       </ul>
-      <Form addNewBook={addNewBook} />
+      <AddForm addNewBook={addNewBook} />
     </div>
   );
 };

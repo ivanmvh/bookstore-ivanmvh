@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 
-const Form = (props) => {
+const AddForm = (props) => {
   const { addNewBook } = props;
 
   const uniqueKey = uuidv4();
@@ -43,8 +43,8 @@ const Form = (props) => {
   );
 };
 
-Form.propTypes = {
+AddForm.propTypes = {
   addNewBook: PropTypes.func.isRequired,
 };
 
-export default Form;
+export default AddForm;
