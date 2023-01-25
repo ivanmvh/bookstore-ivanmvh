@@ -111,10 +111,24 @@ a {
   column-gap: 50px;
 }
 
+.bookInfo {
+  width: 40%;
+}
+
 .bookActions {
+  width: 25%;
   margin: 0;
 }
 
+.progressBlock {
+  width: 30%;
+  margin: 0;
+}
+
+.chapterInfo{
+  width: 20%;
+  margin: 0;
+}
 .formContainer {
   margin-top: 20px;
   margin-bottom: 100px;

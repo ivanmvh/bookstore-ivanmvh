@@ -4,7 +4,7 @@ const initialState = [];
 
 export const checkStatus = () => ({
   type: CHECK_STATUS,
-  payload: 'Under construction',
+  payload: 'Under construction2',
 });
 
 const categoriesReducer = (state = initialState, action) => {
