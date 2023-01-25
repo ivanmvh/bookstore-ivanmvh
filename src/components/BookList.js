@@ -1,5 +1,5 @@
 import React from 'react';
-import Book from './Book';
+import BookCard from './BookCard';
 
 class BookList extends React.PureComponent {
   render() {
@@ -10,7 +10,13 @@ class BookList extends React.PureComponent {
     ];
     return (
       <ul className="booksList">
-        {bookArray.map((book) => <Book key={book.key} title={book.title} author={book.author} />)}
+        {bookArray.map((book) => (
+          <BookCard
+            key={book.key}
+            title={book.title}
+            author={book.author}
+          />
+        ))}
       </ul>
     );
   }
