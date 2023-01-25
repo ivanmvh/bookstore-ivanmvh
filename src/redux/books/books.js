@@ -1,5 +1,5 @@
-const ADD_BOOK = 'bookstore-ivanmvh/books/ADD_BOOK ';
-const REMOVE_BOOK = 'bookstore-ivanmvh/books/REMOVE_BOOK';
+const ADD_BOOK = 'books/ADD_BOOK';
+const REMOVE_BOOK = 'books/REMOVE_BOOK';
 
 const initialState = [];
 
