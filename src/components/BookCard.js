@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Book extends React.PureComponent {
+class BookCard extends React.PureComponent {
   render() {
     const { title, author } = this.props;
     return (
@@ -35,14 +35,14 @@ class Book extends React.PureComponent {
   }
 }
 
-Book.defaultProps = {
+BookCard.defaultProps = {
   title: 'Title',
   author: 'Author',
 };
 
-Book.propTypes = {
+BookCard.propTypes = {
   title: PropTypes.string,
   author: PropTypes.string,
 };
 
-export default Book;
+export default BookCard;

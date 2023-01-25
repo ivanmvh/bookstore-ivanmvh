@@ -92,7 +92,6 @@ a {
   background-color: var(--fff);
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .bookList {
@@ -135,11 +134,16 @@ a {
   color: #888;
 }
 
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+
 .bookTitleForm {
   width: 50%;
   height: 2.813rem;
   margin: 1.188rem 2.125rem 0 0;
-  padding: 0.813rem 35.688rem 0.813rem 1.063rem;
+  padding: 0.813rem 10.688rem 0.813rem 1.063rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
