@@ -5,14 +5,14 @@ import { addBook, removeBook } from '../redux/books/books';
 
 const BookList = () => {
   const booksArray = useSelector((state) => state.books);
-  const dispatch = useDispatch();
+  const dispatch =  useDispatch();
 
   const addNewBook = (book) => {
-    dispatch(addBook(book));
+    dispatch (addBook(book));
   };
 
   const deleteBook = (id) => {
-    dispatch(removeBook(id));
+    dispatch (removeBook(id));
   };
 
   return (
