@@ -111,7 +111,22 @@ a {
   column-gap: 50px;
 }
 
+.bookInfo {
+  width: 40%;
+}
+
 .bookActions {
+  width: 25%;
+  margin: 0;
+}
+
+.progressBlock {
+  width: 30%;
+  margin: 0;
+}
+
+.chapterInfo {
+  width: 10%;
   margin: 0;
 }
 
@@ -172,10 +187,6 @@ a {
   color: #fff;
   cursor: pointer;
   border: none;
-}
-
-.progressBlock {
-  width: 20vw;
 }
 
 button {
