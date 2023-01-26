@@ -1,10 +1,10 @@
 import BookList from '../components/BookList';
-import Form from '../components/Form';
+import AddForm from '../components/AddForm';
 
 const Books = () => (
   <section className="booksPage">
     <BookList />
-    <Form />
+    <AddForm />
   </section>
 );
 
