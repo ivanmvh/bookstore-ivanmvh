@@ -1,50 +1,22 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
-import API_BOOKS_URL from './api-books-url';
-
-const GET_BOOKS = 'books/GET_BOOKS';
+const LOAD_BOOKS = 'books/LOAD_BOOKS';
 const ADD_BOOK = 'books/ADD_BOOK';
 const REMOVE_BOOK = 'books/REMOVE_BOOK';
 
 const initialState = [];
 
-export const getBooksAsync = () => createAsyncThunk(GET_BOOKS, async () => {
-  const booksArray = [];
-  await fetch(`${API_BOOKS_URL}`, {
-    method: 'GET',
-    headers: {
-      'content-Type': 'application/json',
-    },
-  }).then((result) => {
-    const obj = result.text();
-    return obj;
-  }).then((result) => {
-    const obj = JSON.parse(result);
-    Object.keys(obj).forEach((key) => {
-      booksArray.push({ ...obj[key][0], item_id: key });
-    });
-  });
-  return booksArray;
+export const loadBooks = (books) => ({
+  type: LOAD_BOOKS,
+  books,
 });
 
-export const addBookAsync = createAsyncThunk(ADD_BOOK, async (book) => {
-  const result = await fetch(`${API_BOOKS_URL}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(book),
-  }).then((response) => response.text())
-    .then((result) => (result === 'Created' ? book : null));
-  return result;
+export const addBook = (book) => ({
+  type: ADD_BOOK,
+  book,
 });
 
-export const removeBookAsync = createAsyncThunk(REMOVE_BOOK, async (id) => {
-  const result = await fetch(`${API_BOOKS_URL}${id}`, {
-    method: 'DELETE',
-    headers: {
-      'content-Type': 'application/json',
-    },
-  }).then((response) => response.text())
-    .then((result) => (result === 'The book was deleted successfully!' ? id : null));
-  return result;
+export const removeBook = (id) => ({
+  type: REMOVE_BOOK,
+  id,
 });
 
 const booksReducer = (state = initialState, action) => {
@@ -52,7 +24,17 @@ const booksReducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, action.book];
     case REMOVE_BOOK:
-      return state.filter((book) => book.key !== action.id);
+      return state.filter((book) => book.item_id !== action.id);
+    case LOAD_BOOKS: {
+      const bookList = [];
+      Object.entries(action.books).forEach(([key, value]) => bookList.push({
+        item_id: key,
+        title: value[0].title,
+        author: value[0].author,
+        category: value[0].category,
+      }));
+      return [...bookList];
+    }
     default:
       return state;
   }
