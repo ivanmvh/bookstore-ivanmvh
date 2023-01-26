@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import API_BOOKS_URL from './api-books-url';
 
@@ -6,11 +5,7 @@ const GET_BOOKS = 'books/GET_BOOKS';
 const ADD_BOOK = 'books/ADD_BOOK';
 const REMOVE_BOOK = 'books/REMOVE_BOOK';
 
-const uniqueKey = uuidv4();
-
-const initialState = [
-  { key: uniqueKey, title: 'It works', author: 'first' },
-];
+const initialState = [];
 
 export const getBooksAsync = () => createAsyncThunk(GET_BOOKS, async () => {
   const booksArray = [];
@@ -31,11 +26,6 @@ export const getBooksAsync = () => createAsyncThunk(GET_BOOKS, async () => {
   return booksArray;
 });
 
-export const addBook = (book) => ({
-  type: ADD_BOOK,
-  book,
-});
-
 export const addBookAsync = createAsyncThunk(ADD_BOOK, async (book) => {
   const result = await fetch(`${API_BOOKS_URL}`, {
     method: 'POST',
@@ -44,11 +34,6 @@ export const addBookAsync = createAsyncThunk(ADD_BOOK, async (book) => {
   }).then((response) => response.text())
     .then((result) => (result === 'Created' ? book : null));
   return result;
-});
-
-export const removeBook = (id) => ({
-  type: REMOVE_BOOK,
-  id,
 });
 
 export const removeBookAsync = createAsyncThunk(REMOVE_BOOK, async (id) => {
