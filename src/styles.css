@@ -39,7 +39,7 @@
 .navBar {
   width: 87.5rem;
   height: 5.938rem;
-  margin: 10px 20px 0 0px;
+  margin: 10px 20px 0 0;
   padding: 20px;
   background-color: #fff;
 }
@@ -157,7 +157,7 @@ a {
 }
 
 .progress-divider {
-  width: .125rem;
+  width: 0.2rem;
   margin: 25px 2rem 25px 2rem;
   background-color: #e8e8e8;
 }
