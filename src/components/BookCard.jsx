@@ -22,17 +22,18 @@ const Book = (props) => {
         </div>
       </div>
       <div className="progressBlock">
-        <div className="circularProgressContainer">
-          <div className="circularProgress" />
+        <div className="progressContainer">
+          <div className="progressCircle" />
         </div>
-        <div className="statusSection">
-          <span className="percentageCompleted">
+        <div className="progressStatus">
+          <span className="progressCompleted">
             {`${Math.round(Math.random() * 99) + 1}%`}
             {' '}
           </span>
           <p className="statusBook">completed</p>
         </div>
       </div>
+      <div className="progress-divider"> </div>
       <div className="chapterInfo">
         <div className="chapterTitle">
           CURRENT CHAPTER
