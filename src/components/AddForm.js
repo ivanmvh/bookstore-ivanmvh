@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import addBookAsync from '../redux/Thunks/add_books';
 
-const AddForm = (props) => {
-  const { addNewBook } = props;
+const AddForm = () => {
+  const dispatch = useDispatch();
 
   const uniqueKey = uuidv4();
 
   const [newBook, setNewBook] = useState({
     title: '',
     author: '',
+    category: '',
   });
 
   const handleChange = (e) => {
@@ -22,10 +24,16 @@ const AddForm = (props) => {
 
   const addBookToList = (e) => {
     e.preventDefault();
-    addNewBook(newBook);
+    dispatch(addBookAsync({
+      item_id: uuidv4(),
+      title: newBook.title,
+      author: newBook.author,
+      category: newBook.category,
+    }));
     setNewBook({
       title: '',
       author: '',
+      category: '',
     });
   };
 
@@ -41,10 +49,6 @@ const AddForm = (props) => {
       </form>
     </section>
   );
-};
-
-AddForm.propTypes = {
-  addNewBook: PropTypes.func.isRequired,
 };
 
 export default AddForm;

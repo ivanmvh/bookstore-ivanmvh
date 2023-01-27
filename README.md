@@ -55,12 +55,11 @@ After you're finished please remove all the comments and instructions!
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 math-magicians-ivanmvh <a name="about-project"></a>
+# 📖 bookstore-ivanmvh <a name="about-project"></a>
 
 
 **bookstore-ivanmvh** 
@@ -93,16 +92,9 @@ is a project I created using ReactJS. From this project I anticipate to learn:
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Redux</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://redux.js.org/">Reduxjs</a></li>
   </ul>
 </details>
 
@@ -119,7 +111,7 @@ is a project I created using ReactJS. From this project I anticipate to learn:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://math-magicians-ivanmvh.onrender.com/)
+- [Live Demo Link - No yet available]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,7 +148,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:ivanmvh/math-magicians-ivanmvh.git
+  git clone git@github.com:ivanmvh/bookstore-ivanmvh.git
 ```
 
 ### Install
@@ -165,8 +157,8 @@ Install this project with:
 
 
 ```sh
-  cd math-magicians
-  gem install
+  cd my-folder
+  npm install
 ```
 
 ### Usage
@@ -255,28 +247,12 @@ I would like to thank Microverse community
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT license](/license_mit.txt) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
