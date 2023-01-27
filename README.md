@@ -111,7 +111,7 @@ is a project I created using ReactJS. From this project I anticipate to learn:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link - No yet available]()
+- [Live Demo Link - No yet available](/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
