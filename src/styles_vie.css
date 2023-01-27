@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --azure: #0290ff;
+  --black: #121212;
+  --pale-grey: #f5f6fa;
+}
+
+.container {
+  height: 76%;
+}
+
+#root {
+  width: 100vw;
+  height: 89.625rem;
+  padding-top: 50px;
+  background-color: var(--pale-grey);
+  display: flex;
+  justify-content: center;
+}
+
+.navBar {
+  width: 90vw;
+  height: 5.938rem;
+  margin: 20px 1px 10px 1px;
+  padding: 5px 5px 5px 1px;
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+}
+
+.logo {
+  height: 2.313rem;
+  margin: 10px 40px 10px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.navLink {
+  width: auto;
+  height: 1rem;
+  margin: 20px 20px 10px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.userBtn {
+  height: 2.813rem;
+  margin: 20px 0 0 40vw;
+  padding: 1px 20px 20px 1px;
+  border: solid 1px #e8e8e8;
+  border-radius: 100%;
+}
+
+.booksPage {
+  width: 90vw;
+  height: 68.563rem;
+  margin: 5px 5px 5px 5px;
+  padding: 1px 1px 1px 1px;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 var(--black-5);
+  background-color: var(--fff);
+  display: flex;
+  flex-direction: column;
+}
+
+.bookList {
+  width: 100vw;
+}
+
+.book {
+  width: 90vw;
+  height: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 40px 10px 10px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 50px;
+}
+
+.bookInfo {
+  width: 40%;
+}
+
+.bookActions {
+  width: 25%;
+  margin: 0;
+}
+
+.progressBlock {
+  width: 30%;
+  margin: 0;
+}
+
+.chapterInfo {
+  width: 10%;
+  margin: 0;
+}
+
+.formContainer {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.formTitle {
+  width: 30%;
+  height: 1.5rem;
+  margin: 10px 5px 10px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bookTitleForm {
+  width: 50%;
+  height: 2.813rem;
+  margin: 1.188rem 2.125rem 0 0;
+  padding: 0.813rem 10.688rem 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.bookAuthorForm {
+  width: 25%;
+  height: 2.813rem;
+  margin: 1.188rem 2.125rem 0;
+  padding: 0.375rem 0.938rem 0.563rem 1rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.addBtn {
+  width: 10%;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 4px 20px 4px 20px;
+  border-radius: 3px;
+  background-color: var(--azure);
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+button {
+  margin: 5px;
+}
