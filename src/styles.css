@@ -18,15 +18,15 @@
 }
 
 .body, html {
+  padding: 4%;
   background-color: #0b38ec;
-  margin: 0px;
-  padding: 0px;
 }
 
 .container {
-  height: 90%;
+  width: 100%;
+  height: auto;
   margin: auto;
-  min-width: 500px;
+  min-width: 200px;
 }
 
 #root {
@@ -43,12 +43,13 @@
   height: 5.938rem;
   margin: 10px 20px 0 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgb(218, 241, 11);
 }
 
 .nav {
   display: flex;
   align-items: center;
+  background-color: rgb(214, 133, 12);
 }
 
 .logo {
@@ -59,6 +60,7 @@
   font-size: 1.875rem;
   font-weight: bold;
   color: var(--azure);
+  min-width: 260px;
 }
 
 .navLink {
@@ -94,35 +96,68 @@ a {
 }
 
 .booksPage {
-  width: 87.5rem;
+  width: 100%;
   height: 68.563rem;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 var(--black-5);
-  background-color: #fafafa;
+  background-color: #08be5a;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .book {
-  width: 100%;
+  width: 95%;
   height: 10.625rem;
   margin-top: 2.13rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #fff;
+  background-color: rgb(197, 18, 18);
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.progressBlock {
-  width: 20%;
+.bookInfo {
+  width: 45%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
+.bookTitle {
+  width: 90%;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: var(--black);
+}
+
+.bookAuthor {
+  width: 90%;
+  height: 100%;
+  margin: 0.25rem 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.progressBlock {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 15px;
+}
+
 .progressContainer {
-  width: 5.625rem;
+  width: 60%;
   height: 5.625rem;
   padding: 0.63rem 0.625rem 0.75rem 0.75rem;
   display: flex;
@@ -141,16 +176,26 @@ a {
   transform: rotate(45deg);
 }
 
+.progressStatus {
+  width: 35%;
+  height: 1.125rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  color: var(--black);
+  opacity: 0.8;
+}
+
 .progressCompleted {
-  width: 4.25rem;
+  /*width: 80%; */
   height: 2.438rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: var(--black);
+  padding-left: 10px;
 }
 
-.progressStatus {
-  width: 5rem;
+.statusBook {
+  /* width: 80%; */
   height: 1.125rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
@@ -160,20 +205,20 @@ a {
 
 .progress-divider {
   width: 0.2rem;
-  margin: 25px 2rem 25px 2rem;
+  margin: 25px 0.1rem 25px 0.1rem;
   background-color: #e8e8e8;
 }
 
 .chapterInfo {
-  width: 20%;
+  width: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
 .chapterTitle {
-  width: 7.875rem;
+  /* width: 90%; */
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 1rem;
   opacity: 0.5;
@@ -184,7 +229,7 @@ a {
 }
 
 .currentChapter {
-  width: 4.688rem;
+  /* width: 90%; */
   height: 1.313rem;
   margin: 0.438rem 6.813rem 0.25rem 1rem;
   font-family: 'Roboto Slab', serif;
@@ -195,10 +240,10 @@ a {
 }
 
 .updateBtn {
-  width: 11.5rem;
-  height: 2.063rem;
+  /* width: 11.5rem; */
+  /*height: 2.063rem; */
   margin: 0.75rem 0 0.563rem 1rem;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 3px;
   background-color: var(--azure);
   cursor: pointer;
@@ -209,39 +254,9 @@ a {
   font-family: 'Roboto Slab', serif;
 }
 
-.bookInfo {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 1.68rem;
-}
-
-.bookTitle {
-  width: 15.313rem;
-  height: 1.813rem;
-  margin: 0.188rem 20.188rem 0 0;
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.375rem;
-  font-weight: bold;
-  letter-spacing: -0.2px;
-  color: var(--black);
-}
-
-.bookAuthor {
-  width: 8.688rem;
-  height: 1.188rem;
-  margin: 0.25rem 0 0;
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #4386bf;
-}
-
 .bookActions {
   margin-top: 1.3rem;
   margin-left: -8px;
-  width: 50%;
 }
 
 .actionBtn {
@@ -263,10 +278,8 @@ a {
 }
 
 .formContainer {
+  width: 100%;
   margin-top: 4.438rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .formTitle {
@@ -275,15 +288,23 @@ a {
   font-weight: bold;
   letter-spacing: -0.18px;
   color: #888;
-  width: 100%;
   height: 50px;
-  margin-left: 10%;
+  margin-left: 10px
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left:15px;
+  padding-right: 15px;
 }
 
 .bookTitleForm {
-  width: 41.5rem;
+  width: 50%;
   height: 2.813rem;
-  margin: 1.188rem 2.125rem 0 0;
+  margin: 1.188rem 1rem 0 0;
   padding-left: 24px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -291,9 +312,9 @@ a {
 }
 
 .bookAuthorForm {
-  width: 17.813rem;
+  width: 27%;
   height: 2.813rem;
-  margin: 1.188rem 2.125rem 0;
+  margin: 1.188rem 1rem 0 1rem;
   padding: 0.375rem 0.938rem 0.563rem 1rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -301,9 +322,9 @@ a {
 }
 
 .addBtn {
-  width: 11.5rem;
+  width: 20%;
   height: 2.813rem;
-  margin: 1.188rem 0 0 2.125rem;
+  margin: 1.188rem 0 0 1rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: var(--azure);
