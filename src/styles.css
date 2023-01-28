@@ -17,13 +17,16 @@
   --medium-blue: #307bbe;
 }
 
-.body {
-  padding: 1%;
-  background-color: #f5f6fa;
+.body, html {
+  background-color: #0b38ec;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
-  height: 80%;
+  height: 90%;
+  margin: auto;
+  min-width: 500px;
 }
 
 #root {
@@ -31,13 +34,12 @@
   height: 89.625rem;
   padding-top: 3.313rem;
   background-color: var(--pale-grey);
-  max-width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .navBar {
-  width: 87.5rem;
+  width: 100%;
   height: 5.938rem;
   margin: 10px 20px 0 0;
   padding: 20px;
