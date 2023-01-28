@@ -19,7 +19,8 @@
 
 .body, html {
   padding: 4%;
-  background-color: #0b38ec;
+  /* background-color: #0b38ec; */
+  background-color: #f5f6fa;
 }
 
 .container {
@@ -43,13 +44,14 @@
   height: 5.938rem;
   margin: 10px 20px 0 0;
   padding: 20px;
-  background-color: rgb(218, 241, 11);
+  background-color: #fff;
+  /* background-color: rgb(218, 241, 11); */
 }
 
 .nav {
   display: flex;
   align-items: center;
-  background-color: rgb(214, 133, 12);
+  /* background-color: rgb(214, 133, 12); */
 }
 
 .logo {
@@ -100,10 +102,19 @@ a {
   height: 68.563rem;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 var(--black-5);
-  background-color: #08be5a;
+  background-color: #fafafa;
+  /* background-color: #08be5a; */
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bookListContainer {
+  width: 100%;
+}
+
+.booksList {
+  width: 100%;
 }
 
 .book {
@@ -112,7 +123,8 @@ a {
   margin-top: 2.13rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: rgb(197, 18, 18);
+  background-color: #fff;
+  /* background-color: rgb(197, 18, 18); */
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -252,6 +264,7 @@ a {
   letter-spacing: 0.5px;
   font-size: 0.813rem;
   font-family: 'Roboto Slab', serif;
+  max-width: 14em;
 }
 
 .bookActions {
