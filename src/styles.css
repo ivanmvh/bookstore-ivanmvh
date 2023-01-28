@@ -40,6 +40,9 @@
 }
 
 .navBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   height: 5.938rem;
   margin: 10px 20px 0 0;
@@ -50,6 +53,7 @@
 
 .nav {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   /* background-color: rgb(214, 133, 12); */
 }
@@ -91,10 +95,10 @@ a {
 .userBtn {
   width: 2.813rem;
   height: 2.813rem;
-  margin: 0 0 0 35rem;
   padding: 0.875rem;
   border: solid 1px #e8e8e8;
   border-radius: 100%;
+  margin-left: 30vw;
 }
 
 .booksPage {
@@ -386,6 +390,10 @@ a {
 
 @media screen and (max-width: 768px) {
   .book {
+    flex-direction: column;
+  }
+
+  .navBar {
     flex-direction: column;
   }
 
